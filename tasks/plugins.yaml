@@ -2,3 +2,5 @@
   become: "true"
   command: "/sbin/rabbitmq-plugins enable {{ item }}"
   loop: "{{ rabbitmq.plugins }}"
+  register: result
+  changed_when: result.rc > 0
