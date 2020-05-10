@@ -1,0 +1,4 @@
+- import_tasks: "install.yaml"
+- import_tasks: "plugins.yaml"
+- import_tasks: "service.yaml"
+- import_tasks: "users.yaml"

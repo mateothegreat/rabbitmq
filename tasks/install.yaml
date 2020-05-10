@@ -1,0 +1,14 @@
+- name: "Install rabbitmq.repo"
+  become: "true"
+  template:
+    src: "rabbitmq.repo.j2"
+    dest: "/etc/yum.repos.d/rabbitmq.repo"
+    mode: "0600"
+    force: "yes"
+
+- name: "Install rabbitmq"
+  become: "true"
+  yum:
+    name: "rabbitmq-server"
+    state: "present"
+

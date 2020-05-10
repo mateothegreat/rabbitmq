@@ -1,0 +1,13 @@
+namespace: "mateothegreat"
+name: "rabbitmq"
+version: "0.0.1"
+readme: "README.md"
+authors:
+  - "Matthew Davis (https://matthewdavis.io)"
+description: "Install & configure the latest version of rabbitmq."
+license: ["MIT"]
+license_file: "COPYING"
+tags: ["rabbitmq"]
+repository: "https://github.com/mateothegreat/rabbitmq.git"
+homepage: "https://github.com/mateothegreat/rabbitmq"
+issues: "https://github.com/mateothegreat/rabbitmq/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc"

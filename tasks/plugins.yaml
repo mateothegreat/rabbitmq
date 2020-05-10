@@ -1,0 +1,4 @@
+- name: "Enable plugins"
+  become: "true"
+  command: "/sbin/rabbitmq-plugins enable {{ item }}"
+  loop: "{{ rabbitmq.plugins }}"
