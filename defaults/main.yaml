@@ -1,4 +1,5 @@
 rabbitmq:
+  no_log: "true"
   users:
     - username: "test"
       password: "test"

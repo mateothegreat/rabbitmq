@@ -7,6 +7,7 @@ for centos 7.
 
 ```yaml
 rabbitmq:
+  no_log: "true"
   users:
     - username: "test"
       password: "test"
@@ -29,6 +30,7 @@ Add the following to a file like `playbook.yaml`:
     - role: "mateothegreat.rabbitmq"
       vars:
         rabbitmq:
+          no_log: "true"
           users:
             - username: "test"
               password: "test"

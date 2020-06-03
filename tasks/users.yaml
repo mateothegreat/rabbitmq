@@ -10,6 +10,6 @@
     tags: "administrator"
     state: "present"
   loop: "{{ rabbitmq.users }}"
-  no_log: "true"
+  no_log: "{{ no_log }}"
   register: result
   changed_when: result.rc > 0
