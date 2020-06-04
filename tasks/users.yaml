@@ -12,4 +12,4 @@
   loop: "{{ rabbitmq.users }}"
   no_log: "{{ no_log }}"
   register: result
-  changed_when: result.rc > 0
+#  changed_when: result.rc > 0
